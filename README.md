@@ -60,6 +60,20 @@ ethminer --help
 
 This project uses [CMake] and [Hunter] package manager.
 
+For Debian/Ubuntu on errors:
+   
+      - CMake Error at CMakeLists.txt:17 (project):
+      - No CMAKE_CXX_COMPILER could be found.
+
+      - "fatal error: GL/gl.h: No such file or directory" (mesa-common-dev)
+
+   ### Install g++ and build-essentials
+   
+   $ sudo apt-get install g++ build-essentials
+   
+   $ sudo apt-get install mesa-common-dev
+
+
 ```sh
 mkdir build; cd build
 cmake ..
